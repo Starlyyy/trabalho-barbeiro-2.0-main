@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+
+    background-color: aqua;
+}
+
+i#acabaLogo {
+    background-color: rgb(33, 62, 62);
+    display: block;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#acabaLogo:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+menu {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    background-color: blueviolet;
+    color: burlywood;
+    border-top: 2px solid gray;
+}
+
+header ul {
+    list-style: none;
+}
+
+header img{
+    width: 50%;
+}
