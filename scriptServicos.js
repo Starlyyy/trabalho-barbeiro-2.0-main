@@ -9,6 +9,10 @@ function clickMenu(){
     }
 }
 
+function mostrarInformacao(){
+    
+}
+
 // document.querySelector('#lista').addEventListener('click', mostrarMenu());
 
 // const imagens = ['','','','']

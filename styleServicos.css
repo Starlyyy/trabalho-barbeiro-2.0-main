@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Ubuntu;
+    font-size: 17px;
 }
 
 a {
@@ -33,7 +34,7 @@ i#acabaLogo:hover {
 menu {
     display: none;
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
     background-color: blueviolet;
     color: burlywood;
     border-top: 2px solid gray;
