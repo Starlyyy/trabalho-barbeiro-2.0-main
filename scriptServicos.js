@@ -1,5 +1,5 @@
 let nome = localStorage.getItem('nomeUsuario');
-document.getElementById('usuario').textContent = "Olá, " + nome + "! Bem-vindo(a) de volta.";
+document.getElementById('usuario').innerHTML = "Olá, <br>" + nome;
 
 function clickMenu(){
     if (itens.style.display == "block") {
