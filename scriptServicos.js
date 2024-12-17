@@ -8,15 +8,3 @@ function clickMenu(){
         itens.style.display = "block";
     }
 }
-
-function mostrarInformacao(){
-    
-}
-
-// document.querySelector('#lista').addEventListener('click', mostrarMenu());
-
-// const imagens = ['','','','']
-
-// function alternarFoto(){
-
-// }
