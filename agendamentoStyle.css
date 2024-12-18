@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+body {
+    background-color: #203e58;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #07233b;
+    padding: 20px 10px;
+}
+
+header h1 {
+    color: #6bf2fd;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header i {
+    color: #ffffff;
+    text-align: left;
+    /* font-size: 2rem; */
+}
+
+header i:hover {
+    color: #ffffff;
+    scale: 1.4;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form label{
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
