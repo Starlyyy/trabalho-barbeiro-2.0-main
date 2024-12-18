@@ -6,3 +6,11 @@
     box-sizing: border-box;
     font-family: Ubuntu;
 }
+
+body {
+    background-color: #203e58;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+}
+
