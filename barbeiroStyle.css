@@ -17,14 +17,26 @@ body {
 /* Header */
 header {
     background-color: #07233b;
-    text-align: center;
     padding: 20px 10px;
 }
 
 header h1 {
     color: #6bf2fd;
+    text-align: center;
     font-size: 2rem;
     font-weight: bold;
+}
+
+header i {
+    color: #ffffff;
+    text-align: left;
+    /* font-size: 2rem; */
+}
+
+header i:hover {
+    color: #ffffff;
+    scale: 1.4;
+    cursor: pointer;
 }
 
 /* Main container */
@@ -79,19 +91,19 @@ main {
 }
 
 /* Responsividade ?*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
     }
 
     .barbeiros {
-        grid-template-columns: 1fr; /* Apenas uma coluna */
+        grid-template-columns: 1fr; 
     }
 
     .barbeiro-img {
         height: 200px;
     }
-}
+} */
 
 @media (max-width: 480px) {
     header {
