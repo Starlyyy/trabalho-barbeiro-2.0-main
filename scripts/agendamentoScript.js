@@ -1,22 +1,33 @@
-function agendarHorario(){
+document.querySelector('.botaoAgendado').addEventListener('click', function () {
+    
+    const nome = document.querySelector('.nomeSalvo').value;
+    const telefone = document.querySelector('.telSalvo').value;
+    const servico = document.querySelector('.servicoSalvo').value;
+    const data = document.querySelector('.dataSalva').value;
+    const horario = document.querySelector('.horarioSalvo').value;
 
-    let nome = document.querySelector('.nomeSalvo').value;
-    localStorage.setItem('nomeSalvo', nome);
-    
-    let telefone = document.querySelector('.telSalvo').value;
-    localStorage.setItem('telSalvo', telefone);
-    
-    let servico = document.querySelector('.servicoSalvo').value;
-    localStorage.setItem('servicoSalvo', servico);
-    
-    let data = document.querySelector('.dataSalva').value;
-    localStorage.setItem('dataSalva', data);
-    
-    let horario = document.querySelector('.horarioSalvo').value;
-    localStorage.setItem('horarioSalvo', horario);
+    if (nome && telefone && servico && data && horario) {
+        const agendamento = {
+            nome,
+            telefone,
+            servico,
+            data,
+            horario
+        };
 
-}
+        // Recupera o histórico existente ou inicializa um array vazio
+        const historico = JSON.parse(localStorage.getItem('agendamentos')) || [];
 
-document.querySelector('.botaoAgendado').addEventListener('click', ()=>{
-    agendarHorario();
+        historico.push(agendamento);
+
+        // Salva no Local Storage
+        localStorage.setItem('agendamentos', JSON.stringify(historico));
+
+        alert('Agendamento salvo com sucesso!');
+        document.querySelector('.form').reset();
+
+    } else {
+        alert('Por favor, preencha todos os campos!');
+    }
 });
+
