@@ -8,14 +8,14 @@
 }
 
 body {
-    background-color: #7ac4f6;
+    background-color: #203e58;
     color: #ffffff;
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #155e9f;
+    background-color: #07233b;
     padding: 20px 10px;
 }
 
@@ -45,7 +45,7 @@ main {
     height: 80vh;
     max-width: 600px;
     margin: 2rem auto;
-    background: #3e6d96;
+    background: #426172;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
