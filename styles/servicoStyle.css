@@ -1,49 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Ubuntu;
-    font-size: 17px;
+    box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
-header {
+body {
+    background-color: #203e58;
+    color: #ffffff;
     display: flex;
-
-    background-color: aqua;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-i#acabaLogo {
-    background-color: rgb(33, 62, 62);
-    display: block;
-    color: white;
-    padding: 10px;
+/* Header */
+header {
+    background-color: #07233b;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header section i:hover {
     cursor: pointer;
 }
 
-i#acabaLogo:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-
 menu {
-    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 20px; /* Alinhado com o ícone de menu */
+    background-color: #03111d;
+    border-radius: 5px;
     padding: 10px;
-    /* text-align: center; */
-    background-color: blueviolet;
-    color: burlywood;
-    border-top: 2px solid gray;
+    display: none;
+    /* z-index: 10; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-header ul {
+menu ul {
     list-style: none;
 }
 
-header img{
-    width: 50%;
+menu ul li {
+    margin: 10px 0;
+}
+
+menu ul li a {
+    color: #ccd0d4; 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.menu-icon {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#usuario {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ccd0d4;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    height: 3rem;
+    /* background-color: #ffaa33; */
+    text-align: center;
+    border-bottom: 1px solid #82ead8;
+    width: 80%;
+}
+
+.grupo-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.servico {
+    background-color: #426172;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.servico:hover {
+    transform: scale(1.05);
+}
+
+.servico img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #07233b;
+    padding: 15px 20px;
+    height: 80px;
+    text-align: center;
+}
+
+footer div {
+    margin-top: 18px;
+}
+
+footer a {
+    color: #d3fcf8;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #82ead8;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+    background-color: #82ead8;
+    color: #121212;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #usuario {
+        margin-top: 10px;
+    }
+
+    .grupo-servicos {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .servico img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer a {
+        width: 100%;
+        text-align: center;
+    }
 }
